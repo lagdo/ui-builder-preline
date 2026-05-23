@@ -2,9 +2,9 @@
 
 namespace Lagdo\UiBuilder\Preline\Component;
 
-use Lagdo\UiBuilder\Component\Base\PanelHeaderComponent as BaseComponent;
+use Lagdo\UiBuilder\Component\Base\CardFooterComponent as BaseComponent;
 
-class PanelHeaderComponent extends BaseComponent
+class CardFooterComponent extends BaseComponent
 {
     /**
      * @var string
@@ -17,7 +17,7 @@ class PanelHeaderComponent extends BaseComponent
     protected function onCreate(): void
     {
         $this->addWrapper($this->newElement('div', [
-            'class' => 'bg-surface border-b border-card-line rounded-t-xl py-3 px-4',
+            'class' => 'bg-surface border-t border-card-line rounded-b-xl py-3 px-4',
         ]));
         $this->element()->addClass('text-sm text-muted-foreground-1');
     }

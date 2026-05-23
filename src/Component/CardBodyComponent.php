@@ -2,9 +2,9 @@
 
 namespace Lagdo\UiBuilder\Preline\Component;
 
-use Lagdo\UiBuilder\Component\Base\PanelBodyComponent as BaseComponent;
+use Lagdo\UiBuilder\Component\Base\CardBodyComponent as BaseComponent;
 
-class PanelBodyComponent extends BaseComponent
+class CardBodyComponent extends BaseComponent
 {
     /**
      * @return void
