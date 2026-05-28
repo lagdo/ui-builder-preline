@@ -2,11 +2,11 @@
 
 namespace Lagdo\UiBuilder\Preline\Component;
 
-use Lagdo\UiBuilder\Component\Base\TableDataComponent as BaseComponent;
+use Lagdo\UiBuilder\Component\Base\TableHeadCellComponent as BaseComponent;
 
 use function get_class;
 
-class TableDataComponent extends BaseComponent
+class TableHeadCellComponent extends BaseComponent
 {
     /**
      * @return string
@@ -27,8 +27,6 @@ class TableDataComponent extends BaseComponent
      */
     protected function onBuild(): void
     {
-        parent::onBuild();
-
         $zone = $this->getZone();
         if ($zone !== '') {
             $class = $zone === 'head' ?
